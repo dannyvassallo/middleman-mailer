@@ -37,8 +37,8 @@ post '/' do
   puts email
   Pony.mail(
     :to => ENV['email_recipients'],
-    :from => 'noreply@example.com',
-    :subject => 'New Contact Form',
+    :from => 'noreply@the-mailer.herokuapp.com',
+    :subject => 'New Contact From Your Website!',
     :body => email
   )
 end
